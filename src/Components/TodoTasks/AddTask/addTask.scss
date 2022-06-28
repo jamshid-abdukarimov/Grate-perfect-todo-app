@@ -1,0 +1,28 @@
+.add_task {
+  margin-top: 25px;
+  &-btn {
+    cursor: pointer;
+    color: #b4b4b4;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    transition: none;
+    p,
+    i {
+      transition: none;
+    }
+    p {
+      margin-left: 10px;
+    }
+    &:hover {
+      color: darken(#b4b4b4, 30%);
+      transition: 0.3s ease;
+    }
+  }
+
+  &-form {
+    input {
+      margin-bottom: 16px;
+    }
+  }
+}

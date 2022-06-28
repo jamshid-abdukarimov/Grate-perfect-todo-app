@@ -1,0 +1,15 @@
+.button {
+  padding: 10px 20px;
+  text-align: center;
+  background: #4dd599;
+  border-radius: 4px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  &:hover {
+    background: darken(#4dd599, 6%);
+  }
+  &:active {
+    background: darken(#4dd599, 10%);
+  }
+}

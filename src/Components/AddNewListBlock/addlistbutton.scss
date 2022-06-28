@@ -1,0 +1,59 @@
+.add__folder-wrapper {
+  position: relative;
+}
+.list__add-btn {
+  i {
+    color: #767676;
+  }
+  color: #767676;
+  &:hover,
+  &.active {
+    background-color: transparent !important;
+    box-shadow: none !important;
+    span,
+    i {
+      color: #09011a;
+    }
+  }
+}
+
+.add__folder-block {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 240px;
+  height: 150px;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.05) !important;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 18px;
+  & > i {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: #5c5c5c;
+    padding: 5px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .circles {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .circle {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+    }
+  }
+}

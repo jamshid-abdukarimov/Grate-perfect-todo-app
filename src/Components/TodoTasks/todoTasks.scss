@@ -1,0 +1,120 @@
+.todo__tasks {
+  padding: 55px;
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  h1 {
+    font-family: "Montserrat";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #64c4ed;
+    &:hover i {
+      display: inline-flex;
+    }
+  }
+  h2 {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 39px;
+    color: #c9d1d3;
+    text-align: center;
+    margin-top: 150px;
+  }
+  &-icon {
+    color: #ccc;
+    font-size: 15px;
+    margin-left: 14px;
+    height: 100%;
+    vertical-align: middle;
+    display: none;
+    cursor: pointer;
+    &:hover {
+      color: #525252;
+    }
+  }
+
+  &-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+
+    &:hover {
+      i {
+        opacity: 1;
+      }
+      .checkbox {
+        label {
+          background: #f2f2f2;
+          border-color: #f2f2f2;
+          i {
+            color: #b3b3b3;
+          }
+        }
+      }
+    }
+    .checkbox {
+      input {
+        display: none;
+      }
+      label {
+        width: 20px;
+        height: 20px;
+        border: 2px solid #e8e8e8;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        i {
+          font-size: 10px;
+          color: #fff;
+          margin-top: 2px;
+        }
+
+        &:hover {
+          background: #f2f2f2;
+          border-color: #f2f2f2;
+          i {
+            color: #b3b3b3;
+          }
+        }
+      }
+      input:checked + label {
+        background: #4dd599;
+        border-color: #4dd599;
+        i {
+          color: #fff;
+        }
+      }
+    }
+
+    p {
+      margin-left: 15px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 19px;
+      flex: 1 1;
+    }
+    .fa-pen {
+      margin-right: 10px;
+      color: #ffc107;
+      font-size: 16px;
+    }
+    .fa-xmark {
+      font-size: 18px;
+      color: #dc3545;
+    }
+
+    i {
+      opacity: 0;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
